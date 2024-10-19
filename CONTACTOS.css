@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    font-size: 14px;
+}
+
+/* Main Navigation */
+.main-nav {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 29px;
+    justify-content: space-between;
+    border-bottom: 2px solid #eee;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 48px; /* Altura máxima del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 170;
+}
+
+.nav-links li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2b2b2b;
+    padding: 10px 0;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.search-cart a img {
+    margin-right: 10px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    top: 120%; /* Baja el menú desplegable */
+    left: 50%; /* Coloca el menú en el centro horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que quede centrado respecto a su contenedor */
+    z-index: 1000;
+    width: 1000px; /* Ajusta el ancho del menú desplegable */
+    justify-content: space-around;
+    border-radius: 5px;
+    border-top: 2px solid #000;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Añade una transición suave */
+}
+
+.navbar:not(:hover) .dropdown-content {
+    display: flex; /* Asegúrate de que esté visible mientras se hace la transición */
+    opacity: 0; /* Hacerlo invisible */
+    transition-delay: 0.3s; /* Retraso para que el menú no desaparezca inmediatamente */
+}
+
+/* Display the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    opacity: 1; /* Hacerlo visible */
+}
+
+.dropdown-section h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.dropdown-section a {
+    color: #555;
+    text-decoration: none;
+    display: block;
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.navbar:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-section a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Sign In Button */
+.sign-in-container {
+    margin-right: 20px; /* Añade un poco de margen a la derecha */
+}
+
+.sign-in {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sign-in i {
+    margin-right: 8px;
+}
+
+.sign-in:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.cart-button-container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.cart-button {
+    background-color: #000000; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-button:hover {
+    background-color: #ffffff; /* Cambio de color al pasar el ratón */
+    color: black;
+    border: 1px solid #000;
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-container {
+    position: relative;
+    width: auto; /* Ajusta el ancho según el contenido */
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha */
+    margin-left: auto; /* Mantiene los enlaces del menú alineados */
+    margin-right: 18px;
+  }
+  
+  /* Estilo del campo de entrada en estado inicial (pequeño) */
+  .search-input {
+    width: 150px; /* Tamaño inicial pequeño */
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    transition: width 0.4s ease-in-out; /* Solo el ancho cambia */
+    outline: none;
+    border-color: transparent; /* Quita la línea del borde */
+    background-color: #f1f1f1;
+  }
+  
+  /* Efecto al hacer clic (enfocar) en el campo de búsqueda */
+  .search-input:focus {
+    width: 250px; /* Se expande, pero no al 100% para no afectar los enlaces */
+    border-color: #000000;
+    box-shadow: 0 4px 8px rgba(36, 36, 36, 0.2);
+    background-color: white;
+  }
+  
+  /* Contenedor de resultados de búsqueda */
+  .results {
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0; /* Alinea los resultados a la derecha */
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  /* Estilo individual de los resultados */
+  .results div {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Resaltar el resultado al pasar el cursor */
+  .results div:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilo de imagen y texto en los resultados */
+  .results img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+  
+  .results div span {
+    vertical-align: middle;
+  }
+
+/*publicidades*/
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal para los dos lados */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 190px auto 0; /* Añadido un margen superior de 50px */
+    padding: 20px;
+}
+
+/* Estilo del lado izquierdo (formulario de contacto) */
+.left-side {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del lado derecho (mensaje explicativo) */
+.right-side {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.enviar{
+    font-weight: 800;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* Estilo para el texto de la parte derecha */
+.right-side h2 {
+    margin-bottom: 20px;
+}
+
+.right-side p {
+    font-size: 16px;
+    line-height: 1.5;
+}
