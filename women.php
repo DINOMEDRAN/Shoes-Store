@@ -113,51 +113,51 @@
 
     <main>
         <section class="catalog-header">
-          <h1>Men's Low Tops</h1>
-          <p>Explore a selection of classic and comfortable men's low-top sneakers, available in a variety of styles and colors.</p>
+          <h1>Mujer</h1>
+          <p>Lo mas importante para una mujer, son los zapatos.</p>
         </section>
     
         <section class="catalog">
           <a href="CONS AS-1 Pro Low Top.php" class="product">
             <img src="img/skatebording/CONS AS-1 Pro Low Top/1.jpg" alt="Shoe 1">
             <p class="product-name">CONS AS-1 Pro Low Top</p>
-            <p class="product-price">CA$75.00</p>
+            <p class="product-price">$75.00</p>
           </a>
           <a href="CONS AS-1 Pro Suede & Canvas Low Top.php" class="product">
             <img src="img/skatebording/CONS AS-1 Pro Suede & Canvas Low Top/1.jpg" alt="Shoe 2">
             <p class="product-name">CONS Fastbreak Pro Leather & Nylon Mid Top</p>
-            <p class="product-price">CA$95.00</p>
+            <p class="product-price">$95.00</p>
           </a>
           <a href="CONS Fastbreak Pro Leather & Nylon Mid Top.php" class="product">
             <img src="img/skatebording/CONS Fastbreak Pro Leather & Nylon Mid Top/1.jpg" alt="Shoe 3">
             <p class="product-name">Converse Weapon Leather Low Top</p>
-            <p class="product-price">CA$125.00</p>
+            <p class="product-price">$125.00</p>
           </a>
           <a href="CONS Fastbreak Pro Leather & Suede Mid Top.php" class="product">
             <img src="img/skatebording/CONS Fastbreak Pro Leather & Suede Mid Top/1.jpg" alt="Shoe 4">
             <p class="product-name">CONS Fastbreak Pro Leather & Suede Mid Top</p>
-            <p class="product-price">CA$100.00</p>
+            <p class="product-price">$100.00</p>
           </a>
 
           <a href="CONS Fastbreak Pro Suede Nylon Mid Top.php" class="product">
             <img src="img/skatebording/CONS Fastbreak Pro Suede & Canvas Mid Top/1.jpg" alt="Shoe 1">
             <p class="product-name">CONS Fastbreak Pro Suede Nylon Mid Top</p>
-            <p class="product-price">CA$75.00</p>
+            <p class="product-price">$75.00</p>
           </a>
           <a href="CONS Fastbreak Pro Suede & Canvas Mid Top.php" class="product">
             <img src="img/skatebording/CONS Fastbreak Pro Suede Nylon Mid Top/1.jpg" alt="Shoe 2">
             <p class="product-name">CONS Fastbreak Pro Suede & Canvas Mid Top</p>
-            <p class="product-price">CA$65.00</p>
+            <p class="product-price">$65.00</p>
           </a>
           <a href="Converse x Awake NY One Star Pro Low Top.php" class="product">
             <img src="img/skatebording/Converse x Awake NY One Star Pro Low Top/1.jpg" alt="Shoe 3">
             <p class="product-name">Converse x Awake NY One Star Pro Low Top</p>
-            <p class="product-price">CA$180.00</p>
+            <p class="product-price">$180.00</p>
           </a>
           <a href="Louie Lopez Pro Low Top.php" class="product">
             <img src="img/skatebording/Louie Lopez Pro Low Top/1.jpg" alt="Shoe 4">
             <p class="product-name">Louie Lopez Pro Low Top</p>
-            <p class="product-price">CA$85.00</p>
+            <p class="product-price">$85.00</p>
           </a>
           <!-- Agrega más productos aquí si es necesario -->
         </section>

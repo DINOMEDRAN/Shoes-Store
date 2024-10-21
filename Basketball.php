@@ -121,22 +121,22 @@
           <a href="chucklow70.php" class="product">
             <img src="img/Chuck Taylor All Star Low Top/negro/1.jpg" alt="Shoe 1">
             <p class="product-name">Chuck Taylor All Star Low Top</p>
-            <p class="product-price">CA$75.00</p>
+            <p class="product-price">$75.00</p>
           </a>
           <a href="chuck70.php" class="product">
             <img src="img/convers/convers.1.jpg" alt="Shoe 2">
             <p class="product-name">Chuck Taylor All Star Wide Low Top</p>
-            <p class="product-price">CA$95.00</p>
+            <p class="product-price">$95.00</p>
           </a>
           <a href="weapon.php" class="product">
             <img src="img/Converse Weapon Leather Low Top/1.jpg" alt="Shoe 3">
             <p class="product-name">Converse Weapon Leather Low Top</p>
-            <p class="product-price">CA$125.00</p>
+            <p class="product-price">$125.00</p>
           </a>
           <a href="weapomidtop.php" class="product">
             <img src="img/Converse Weapon Mid Top/1.jpg" alt="Shoe 4">
             <p class="product-name">Converse Weapon Mid Top</p>
-            <p class="product-price">CA$100.00</p>
+            <p class="product-price">$100.00</p>
           </a>
           <!-- Agrega más productos aquí si es necesario -->
         </section>
