@@ -8,7 +8,7 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Pagina Producto</title>
-		<link rel="stylesheet" href="zapatos.css" />
+		<link rel="stylesheet" href="ZAPATOOOS.css" />
 	</head>
 	<body>
     <header>
