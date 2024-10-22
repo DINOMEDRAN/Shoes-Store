@@ -24,10 +24,13 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("ssss", $nombre, $apellido, $email, $fecha_nacimiento);
 
 // Ejecutar la consulta
-if ($stmt->execute()) {
-    echo "Registro exitoso. ¡Aprovecha tu 15% OFF!";
+if ($ejecutar) {
+    // Redirigir a la página de registro exitoso
+    header("Location: registroexitoso.php");
+    exit();
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    // Mostrar un mensaje de error en caso de fallo
+    echo 'Error al registrar el usuario.';
 }
 
 // Cerrar la conexión

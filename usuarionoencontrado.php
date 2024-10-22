@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error en el Registro</title>
-    <link rel="stylesheet" href="resgistroexitoso.css">
+    <link rel="stylesheet" href="EXITOOO.css">
 </head>
 <body>
     <div class="container">

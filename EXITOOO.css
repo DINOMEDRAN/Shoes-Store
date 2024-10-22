@@ -20,7 +20,7 @@ body {
 
 .success-icon {
     font-size: 50px;
-    color: #8c429b;
+    color: #000000;
     margin-bottom: 20px;
     width: 100px;
     height: 100px;
@@ -38,12 +38,12 @@ h1 {
 }
 
 p {
-    color: #666;
+    color: #000000;
     margin-bottom: 30px;
 }
 
 button {
-    background-color: #2b0969;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -53,5 +53,6 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }

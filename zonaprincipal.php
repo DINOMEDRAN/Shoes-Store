@@ -107,6 +107,10 @@
             
         </nav>
     </header>
+
+
+
+
         <div class="imagen-con-texto">
             <img src="img/publicidad.jpg" alt="Descripción de la imagen">
             <div class="texto-centrado">
@@ -152,6 +156,8 @@
             </div>
         </div>
 </body>
+
+
 <footer>
     <div class="form-container">
         <h1>REGÍSTRATE Y APROVECHA TU 15% OFF</h1>

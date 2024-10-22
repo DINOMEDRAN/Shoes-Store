@@ -17,9 +17,10 @@ if(mysqli_num_rows($validar_login) > 0) {
     // No es seguro almacenar contraseñas en sesiones, pero si necesitas hacerlo:
     $_SESSION['contrasena'] = $row['contrasena'];
 
-    header("Location: zonaprincipal.php");
-    exit;
-} else {
+     // Redirigir a la página de registro exitoso
+    header("Location: Usuarioencontrado.php");
+    exit();
+
 // Generar HTML de respuesta
 echo '<!DOCTYPE html>
 <html lang="es">

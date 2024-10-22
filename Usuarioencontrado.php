@@ -11,9 +11,9 @@
         <div class="success-icon">
             &#10004;
         </div>
-        <h1>Registro Exitoso</h1>
-        <p>Tu cuenta ha sido creada exitosamente.</p>
-        <button onclick="iniciarSesion()">Iniciar Sesión</button>
+        <h1>Cuenta encontrada</h1>
+        <p>BIenvenido devuelta a Shoes Store</p>
+        <button onclick="iniciarSesion()">Volver</button>
     </div>
 
     <script>
