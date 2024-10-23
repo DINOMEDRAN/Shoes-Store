@@ -93,7 +93,7 @@
     </div>
             <ul class="nav-links">
                 <li class="dropdown">
-                    <a href="men.php" class="dropbtn">Men</a>
+                    <a href="men.php" class="dropbtn">Hombre</a>
                     <div class="dropdown-content">
                         <div class="dropdown-section">
                             <h3>Deporte</h3>
@@ -163,7 +163,7 @@
                         </div>
                 </li>
                 <li class="dropdown">
-                    <a href="CONTACTO.php" class="dropbtn">contacto</a>
+                    <a href="CONTACTO.php" class="dropbtn">Contacto</a>
                 </li>               
             </ul>
 

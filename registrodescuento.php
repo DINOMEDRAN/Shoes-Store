@@ -18,27 +18,42 @@ $apellido = $_POST['apellido'];
 $email = $_POST['email'];
 $fecha_nacimiento = $_POST['fecha_nacimiento'];
 
-// Preparar la consulta SQL
-$sql = "INSERT INTO descuento (nombre, apellido, email, fecha_nacimiento) VALUES (?, ?, ?, ?)";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssss", $nombre, $apellido, $email, $fecha_nacimiento);
+try {
+    // Preparar la consulta SQL
+    $sql = "INSERT INTO descuento (nombre, apellido, email, fecha_nacimiento) VALUES (?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    
+    if (!$stmt) {
+        throw new Exception("Error en la preparación: " . $conn->error);
+    }
 
-// Ejecutar la consulta
-if ($ejecutar) {
-    // Redirigir a la página de registro exitoso
-    header("Location: registroexitoso.php");
-    exit();
-} else {
-    // Mostrar un mensaje de error en caso de fallo
-    echo 'Error al registrar el usuario.';
+    // Enlazar los parámetros
+    $stmt->bind_param("ssss", $nombre, $apellido, $email, $fecha_nacimiento);
+
+    // Ejecutar la consulta
+    if ($stmt->execute()) {
+        // Redirigir a 'registroexitoso.php' si el registro fue exitoso
+        header("Location: registroexitoso.php");
+        exit();
+    }
+
+} catch (mysqli_sql_exception $e) {
+    // Manejar error de entrada duplicada
+    if ($e->getCode() == 1062) { // Código de error para 'Duplicate entry'
+        // Redirigir a 'emailduplicado.php' si el correo ya existe
+        header("Location: yaestaregistrado.php ");
+        exit();
+    } else {
+        // Si hay otro tipo de error, mostrarlo
+        die("Error en la consulta: " . $e->getMessage());
+    }
+} finally {
+    // Cerrar la conexión
+    if (isset($stmt)) {
+        $stmt->close();
+    }
+    $conn->close();
 }
-
-// Cerrar la conexión
-$stmt->close();
-$conn->close();
 ?>
-
-
-
 
 
