@@ -157,7 +157,6 @@
         </div>
 </body>
 
-
 <footer>
     <div class="form-container">
         <h1>REGÍSTRATE Y APROVECHA TU 15% OFF</h1>

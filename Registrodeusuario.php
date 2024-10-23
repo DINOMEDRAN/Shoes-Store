@@ -13,7 +13,8 @@ $resultado = mysqli_query($conexion, $verificar_correo);
 
 if (mysqli_num_rows($resultado) > 0) {
     // Si el correo ya existe, mostrar mensaje de error
-    echo "Este usuario ya fue registrado, intente con otro.";
+    header("Location: yaestaregistrado.php");
+    exit();
 } else {
     // Si el correo no existe, proceder con el registro
     $query = "INSERT INTO usuarios(nombre, numero_de_telefono, correo, contrasena) 
