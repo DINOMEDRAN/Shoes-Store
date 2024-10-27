@@ -60,7 +60,7 @@
                         <th>Cantidad</th>
                         <th>Precio</th>
                         <th>Total</th>
-                        <th>Acciones</th>
+                        <th>Borrar</th>
                     </tr>
                 </thead>
                 <tbody>
