@@ -8,12 +8,13 @@
 </head>
 <body>
 <header>
+    
         <nav class="main-nav">
         <div class="logo">
-        <a href="zonaprincipal.php"> <!-- Cambia 'index.html' por la ruta de tu página de inicio -->
+        <a href="zonaprincipal.php"> <!-- Cambia 'index.html' por la ruta de tu página de inicio -->-
             <img src="img/LISTO.png" alt="Logo Shoes Store" />
         </a>
-    </div>
+        </div>
             <ul class="nav-links">
                 <li class="dropdown">
                     <a href="men.php" class="dropbtn">Hombre</a>
@@ -70,20 +71,20 @@
                             <a href="#">Winter Boots</a>
                             <a href="#">Slips & Sandals</a>
                         </div>
-                        <div class="dropdown-section">
-                            <h3>Vans</h3>
-                            <a href="#">All Clothing</a>
-                            <a href="#">Tops & T-Shirts</a>
-                        </div>
-                        <div class="dropdown-section">
-                            <h3>Convers</h3>
-                            <a href="#">All Accessories</a>
-                        </div>
-                        <div class="dropdown-section">
-                            <h3>Adidas</h3>
-                            <a href="#">New Arrivals</a>
-                            <a href="#">Bestsellers</a>
-                        </div>
+                    <div class="dropdown-section">
+                        <h3>Vans</h3>
+                        <a href="#">All Clothing</a>
+                        <a href="#">Tops & T-Shirts</a>
+                    </div>
+                    <div class="dropdown-section">
+                        <h3>Convers</h3>
+                        <a href="#">All Accessories</a>
+                    </div>
+                    <div class="dropdown-section">
+                        <h3>Adidas</h3>
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Bestsellers</a>
+                    </div>
                 </li>
                 <li class="dropdown">
                     <a href="CONTACTO.php" class="dropbtn">contacto</a>
