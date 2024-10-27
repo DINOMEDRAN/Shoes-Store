@@ -38,7 +38,7 @@
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="women.php" class="dropbtn">Mujer</a>
+                    <a href="women.php" class="dropbtn">Mujer</a> 
                     <div class="dropdown-content">
                         <div class="dropdown-section">
                             <h3>Deporte</h3>
